@@ -38,29 +38,19 @@ const contactInfo = [
 ];
 
 const socialLinks = [
-  // {
-  //   icon: Github,
-  //   href: "https://github.com",
-  //   label: "GitHub"
-  // },
   {
     icon: Linkedin,
-    href: "https://www.linkedin.com/company/genxreality/posts/?feedView=all",
+    href: "https://www.linkedin.com/company/genxreality/",
     label: "LinkedIn"
   },
   {
     icon: Instagram,
-    href: "https://www.instagram.com/genxreality?igsh=MXR2c2NzaDh2cmMxYw==",
+    href: "https://www.instagram.com/genxreality/",
     label: "Instagram"
   },
-  // {
-  //   icon: SiX,
-  //   href: "https://x.com",
-  //   label: "X (Twitter)"
-  // },
   {
     icon: Mail,
-    href: "mailto:contact@genxreality.com",
+    href: "mailto:support@genxreality.in",
     label: "Email"
   }
 ];
