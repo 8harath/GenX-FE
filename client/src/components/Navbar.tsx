@@ -49,7 +49,8 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/">
-            <a className="text-xl font-bold text-primary hover:text-primary/80 transition-colors">
+            <a className="flex items-center gap-2 text-xl font-bold text-primary hover:text-primary/80 transition-colors">
+              <img src="/src/assets/logo.svg" alt="GenXReality Logo" className="w-8 h-8" />
               GenXReality
             </a>
           </Link>

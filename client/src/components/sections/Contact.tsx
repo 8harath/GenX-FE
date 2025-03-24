@@ -38,29 +38,19 @@ const contactInfo = [
 ];
 
 const socialLinks = [
-  // {
-  //   icon: Github,
-  //   href: "https://github.com",
-  //   label: "GitHub"
-  // },
   {
     icon: Linkedin,
-    href: "https://www.linkedin.com/company/genxreality/posts/?feedView=all",
+    href: "https://www.linkedin.com/company/genxreality/",
     label: "LinkedIn"
   },
   {
     icon: Instagram,
-    href: "https://www.instagram.com/genxreality?igsh=MXR2c2NzaDh2cmMxYw==",
+    href: "https://www.instagram.com/genxreality/",
     label: "Instagram"
   },
-  // {
-  //   icon: SiX,
-  //   href: "https://x.com",
-  //   label: "X (Twitter)"
-  // },
   {
     icon: Mail,
-    href: "mailto:contact@genxreality.com",
+    href: "mailto:support@genxreality.in",
     label: "Email"
   }
 ];
@@ -76,8 +66,7 @@ export default function Contact() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    // Handle form submission
+    // Form will be handled by Formspree
   }
 
   return (
@@ -175,7 +164,7 @@ export default function Contact() {
             className="bg-card rounded-lg p-6 shadow-lg hover:shadow-[0_0_30px_rgba(0,255,0,0.1)] transition-all duration-500"
           >
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <form action="https://formspree.io/f/8harath.k@gmail.com" method="POST" className="space-y-6">
                 <FormField
                   control={form.control}
                   name="name"
