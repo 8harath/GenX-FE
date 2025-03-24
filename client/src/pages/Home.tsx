@@ -7,6 +7,8 @@ import FutureVision from "@/components/sections/FutureVision";
 import Blog from "@/components/sections/Blog";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/Footer";
+import { Route } from "wouter";
+import Investor from "./Investor";
 
 export default function Home() {
   return (
@@ -23,6 +25,7 @@ export default function Home() {
       <Blog />
       <Contact />
       <Footer />
+      <Route path="/investor" component={Investor} />
     </motion.div>
   );
 }

@@ -43,12 +43,14 @@ export default function Hero() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.6, 0.05, 0.01, 0.9] }}
         >
-          <Button
-            size="lg"
-            className="bg-background/10 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-lg hover:scale-105 hover:shadow-[0_0_30px_rgba(0,255,0,0.3)]"
-          >
-            Explore Our Solutions
-          </Button>
+          <Link href="/investor">
+            <Button
+              size="lg"
+              className="bg-background/10 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-lg hover:scale-105 hover:shadow-[0_0_30px_rgba(0,255,0,0.3)]"
+            >
+              Become an Investor
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>
