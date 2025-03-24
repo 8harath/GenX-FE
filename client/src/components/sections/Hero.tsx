@@ -12,10 +12,10 @@ export default function Hero() {
 
       <div className="relative z-10 container mx-auto px-4 text-center">
         <motion.h1 
-          initial={{ y: 20, opacity: 0 }}
+          initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: [0.6, 0.05, 0.01, 0.9] }}
-          className="text-4xl md:text-6xl font-bold mb-4 font-montserrat text-white"
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 font-montserrat text-white"
         >
           GenXReality: Making AR/VR Accessible and Affordable for All
         </motion.h1>

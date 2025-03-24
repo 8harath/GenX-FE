@@ -45,7 +45,12 @@ export default function HowItWorks() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="relative hover:shadow-[0_0_20px_rgba(0,255,0,0.2)] transition-all duration-300">
+                <motion.div
+  whileHover={{ scale: 1.02 }}
+  whileTap={{ scale: 0.98 }}
+  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+>
+  <Card className="relative hover:shadow-[0_0_20px_rgba(0,255,0,0.2)] transition-all duration-300">
                   <CardContent className="p-6 text-center">
                     <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
                       <step.icon className="w-6 h-6 text-primary" />
@@ -54,6 +59,7 @@ export default function HowItWorks() {
                     <p className="text-muted-foreground">{step.description}</p>
                   </CardContent>
                 </Card>
+</motion.div>
               </motion.div>
             ))}
           </div>
